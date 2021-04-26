@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>twitter-to-kafka-service</module>
+        <module>app-config-data</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,10 +26,17 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <twitter4j-stream.version>4.0.7</twitter4j-stream.version>
         <lombok.version>1.18.20</lombok.version>
+
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>app-config-data</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>

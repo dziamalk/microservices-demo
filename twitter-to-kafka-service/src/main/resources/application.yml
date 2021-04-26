@@ -8,5 +8,5 @@ twitter-to-kafka-service:
   welcome-message: Hello microservices
   mock-min-tweet-length: 5
   mock-max-tweet-length: 15
-  enable-mock-tweets: false
+  enable-mock-tweets: true
   mock-sleep-ms: 1000
