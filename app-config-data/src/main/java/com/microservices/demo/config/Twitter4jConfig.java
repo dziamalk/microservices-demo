@@ -10,15 +10,16 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:twitter.properties")
 public class Twitter4jConfig {
 
-    @Value("${oauth.consumerKey}")
-    private String consumerKey;
+//    @Value(value = "${oauth.consumerKey}")
+    private String consumerKey = "";
 
-    @Value("${oauth.consumerSecret}")
-    private String consumerSecret;
+//    @Value("${oauth.consumerSecret}")
+    private String consumerSecret = "";
 
-    @Value("${oauth.accessToken}")
-    private String accessToken;
+//    @Value("${oauth.accessToken}")
+    private String accessToken = "";
 
-    @Value("${oauth.accessTokenSecret}")
-    private String accessTokenSecret;
+//    @Value("${oauth.accessTokenSecret}")
+    private String accessTokenSecret = "";
+
 }

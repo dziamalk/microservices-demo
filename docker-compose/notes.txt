@@ -1,0 +1,18 @@
+docker system prune [-a]
+
+C:\Users\mdz\workspace\edu\microservices\microservices-demo>docker-compose>docker-compose -f common.yml -f kafka_cluster.yml -f services.yml up
+//lub definicja w .env
+//COMPOSE_PATH_SEPARATOR=:
+//COMPOSE_FILE=common.yml:kafka_cluster.yml:services.yml
+
+docker ps //if containers are up
+C:\Users\mdz\workspace\edu\microservices\microservices-demo>docker pull confluentinc/cp-kafkacat
+C:\Users\mdz\workspace\edu\microservices\microservices-demo>docker run -it --network=host confluentinc/cp-kafkacat kafkacat -L -b localhost:19092
+
+//to see the logs from the container, -f fo showing logs continouesly
+docker logs ${containerId} [-f]
+
+kafkacat -C -b localhost:19092 -t twitter-topic //show the consumer of the topic
+docker-compose down //to stop running containers
+
+
