@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      allow-override: true #we enable to override properties in spring cloud
+      override-none: true
